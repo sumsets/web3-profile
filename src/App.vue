@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <deneme-deneme msg="oguz metehan" :no="1453"/>
+    <profile-top msg="oguz metehan" :no="1453"/>
   </div>
 </template>
 
 <script>
-import DenemeDeneme from './components/DenemeDeneme.vue';
+import ProfileTop from './components/ProfileTop.vue';
+import Style from './style.scss';
 
 export default {
   name: 'App',
+  src: {
+    Style,
+  },
   components: {
-    DenemeDeneme,
+    ProfileTop,
   },
 };
 </script>
@@ -23,7 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   width: 375px;
 }
 </style>
