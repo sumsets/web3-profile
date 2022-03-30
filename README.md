@@ -1,4 +1,4 @@
-# nft-token
+# web3-profile
 
 ## Project setup
 ```
