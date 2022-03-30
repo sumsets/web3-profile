@@ -6,17 +6,17 @@
     </span>
 
     <div id="status-bar-right">
-      <!-- <img src="@/assets/mobil.png" /> -->
+      <img class="right-bar-icons" src="@/assets/MobileSignal.svg" alt="sinyal" />
 
-      <profile-top-wifi :degree="wifiLevel"></profile-top-wifi>
+      <profile-top-wifi class="right-bar-icons" :degree="wifiLevel"></profile-top-wifi>
 
-      <!-- <img src="@/assets/battery.png" alt="bateri ikonu" /> -->
+      <img class="right-bar-icons" src="@/assets/Battery.svg" alt="bateri ikonu" />
     </div>
   </div>
 
     <div id="back-more-bar">
-    <div id="back-button">{{back}}</div>
-    <div id="more-button">{{more}}</div>
+    <img src="@/assets/Frame.svg" alt="back" />
+    <img src="@/assets/Group 65.svg" alt="more" />
     </div>
     <div id="wallet-token-bar">
     <div id="wallet">
@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       mobil: 'sinyal',
-      wifiLevel: 1,
+      wifiLevel: 3,
       back: '../assets/Frame.svg',
       more: '././assets/Group 65.svg',
       dolar: '$',
@@ -79,6 +79,11 @@ export default {
     display: flex;
     flex-wrap: wrap;
     }
+
+.right-bar-icons {
+  padding-left:5px;
+}
+
 #back-more-bar{
     display: flex;
     flex-wrap: wrap;
