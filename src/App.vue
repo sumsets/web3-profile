@@ -7,13 +7,10 @@
 
 <script>
 import ProfileTop from './components/ProfileTop.vue';
-import Style from './style.scss';
+import './style.scss';
 
 export default {
   name: 'App',
-  src: {
-    Style,
-  },
   components: {
     ProfileTop,
   },
@@ -22,11 +19,11 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   width: 375px;
+  background-color: rgb(233, 225, 216);
 }
 </style>
