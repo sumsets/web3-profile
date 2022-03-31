@@ -1,43 +1,50 @@
 <template>
-<div id="head" :style="{ backgroundImage: 'url(' + imageUrl + ')' }">
-  <div id="status-bar">
-    <span id="status-bar-left">
-      09:41
-    </span>
+  <div id="head" :style="{ backgroundImage: 'url(' + imageUrl + ')' }">
+    <div id="status-bar">
+      <span id="status-bar-left">
+        09:41
+      </span>
 
-    <div id="status-bar-right">
-      <img class="right-bar-icons" src="@/assets/MobileSignal.svg" alt="sinyal" />
+      <div id="status-bar-right">
+        <img class="right-bar-icons" src="@/assets/MobileSignal.svg" alt="sinyal" />
 
-      <profile-top-wifi class="right-bar-icons" :degree="wifiLevel"></profile-top-wifi>
+        <profile-top-wifi class="right-bar-icons" :degree="wifiLevel"></profile-top-wifi>
 
-      <img class="right-bar-icons" src="@/assets/Battery.svg" alt="bateri ikonu" />
+        <img class="right-bar-icons" src="@/assets/Battery.svg" alt="bateri ikonu" />
+      </div>
     </div>
-  </div>
 
     <div id="back-more-bar">
-    <img src="@/assets/Frame.svg" alt="back" />
-    <img src="@/assets/Group 65.svg" alt="more" />
+      <img src="@/assets/Frame.svg" alt="back" />
+      <img src="@/assets/Group 65.svg" alt="more" />
     </div>
+
     <div id="wallet-token-bar">
       <div id="wallet">
         <img  id="wallet-icon" src="@/assets/wallet-icon.svg" alt="wallet-icon">
         <span id="director">{{code}}</span>
       </div>
+
       <div id="token">
         <img id="token-icon" src="@/assets/tokens.svg" alt="tokens" />
         <span id="token-total">{{token}}</span>
       </div>
     </div>
+
     <div id="profile-section">
-    <img :src="pp" alt="">
-    <div id="user-id">{{user}}</div>
-    <div id="badges">
-    <img :src="badge1" alt="">
-    <img :src="badge2" alt="">
-    <img :src="badge3" alt="">
+      <img :src="pp" alt="">
+
+      <div id="user-id">
+        {{user}}
+      </div>
+
+      <div id="badges">
+        <img :src="badge1" alt="">
+        <img :src="badge2" alt="">
+        <img :src="badge3" alt="">
+      </div>
     </div>
-    </div>
-</div>
+  </div>
 </template>
 
 <script>
