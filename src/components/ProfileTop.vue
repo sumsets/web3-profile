@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       mobil: 'sinyal',
-      wifiLevel: 3,
+      wifiLevel: 2,
       back: '../assets/Frame.svg',
       more: '././assets/Group 65.svg',
       code: 'Ox134...5bed',
