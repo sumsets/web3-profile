@@ -33,19 +33,20 @@
       </div>
     </div>
 
-    <div id="upper-head2" :style="{ backgroundImage: 'url(' + imageUrl2 + ')' }">
+    <div id="lower-head" :style="{ backgroundImage: 'url(' + imageUrl2 + ')' }">
       <div id="profile-section">
-        <img :src="pp" alt="">
+        <img id="pp" src="@/assets/pp.svg" alt="avatar" />
 
-        <div id="user-id">
+        <span id="user-name">
           {{user}}
-        </div>
+        </span>
 
         <div id="badges">
-          <img :src="badge1" alt="">
-          <img :src="badge2" alt="">
-          <img :src="badge3" alt="">
+          <img class="badge" src="@/assets/badge-fast.svg" alt="more" />
+          <img class="badge" src="@/assets/badge-student.svg" alt="more" />
+          <img class="badge" src="@/assets/badge-ranking-1.svg" alt="more" />
         </div>
+        <p id="person">{{personnel}}</p>
       </div>
     </div>
   </div>
@@ -60,10 +61,7 @@ export default {
   },
   data() {
     return {
-      mobil: 'sinyal',
       wifiLevel: 3,
-      back: '../assets/Frame.svg',
-      more: '././assets/Group 65.svg',
       code: 'Ox134...5bed',
       token: '420',
       pp: './assets/unsplash_6anudmplLw4.svg',
@@ -71,6 +69,7 @@ export default {
       badge1: './assets/Ranking 1.svg',
       badge2: './assets/Fast Graduate.svg',
       badge3: './assets/Top Student.svg',
+      personnel: 'I am an experienced content writer and digital marketing expert, with a proven track record of writing engaging...',
       // eslint-disable-next-line
       imageUrl: require('@/assets/top-background.svg'),
       // eslint-disable-next-line
@@ -82,7 +81,8 @@ export default {
 
 <style scoped lang="scss">
 #head {
-  background-color: #E5E5E5;
+  background-color: #F7F7FA;
+  height: 405px;
 }
 #upper-head {
   height: 154px;
@@ -90,65 +90,94 @@ export default {
   z-index: 1;
 }
 #status-bar {
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 13px 24px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 24px;
 }
 #status-bar-right{
-    display: flex;
-    flex-wrap: wrap;
-    }
-
+  display: flex;
+  flex-wrap: wrap;
+}
 .right-bar-icons {
   padding-left:5px;
 }
 
 #back-more-bar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 24px;
 }
 #wallet-token-bar{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 3px;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 3px;
+  align-items: center;
+  margin-top: 20px;
 
 }
 #wallet{
-    display: flex;
-    border: 1px solid #BBD5DE;
-    border-radius: 8px;
-    background-color: #BBD5DE;
-    padding: 4px 9px;
-    margin-left: 15px;
-    align-items: center;
+  display: flex;
+  border: 1px solid #BBD5DE;
+  border-radius: 8px;
+  background-color: #BBD5DE;
+  padding: 4px 9px;
+  margin-left: 15px;
+  align-items: center;
 }
 #wallet-icon{
-    padding-right: 5px;
+  padding-right: 5px;
 }
 #director {
- text-decoration: underline;
- font-size: 12px;
+  text-decoration: underline;
+  font-size: 12px;
 }
 #token{
-    display: flex;
-    margin-right: 15px;
-    align-items: center;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
 }
 #token-total{
- font-size: 20px;
+  font-size: 20px;
+}
+#lower-head {
+  height: 278px; //278 olmalı, geçici olarak
+  align-items: center;
+  margin-top: -90px;
+  /*
+  position: relative;
+  top: -20px;
+  */
 }
 #profile-section{
-    height: 158px;
-    justify-content: space-between;
-    margin-top: -50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 158px;
+  justify-content: space-between;
+  margin-top: -55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pp {
+  z-index: 1;
+  margin-top: 35px;
+
+}
+#user-name {
+  color:#333333;
+  font-size: 22px;
+  padding: 10px;
+}
+.badge {
+  margin: 0px 4px;
+}
+#person {
+  background-color: #FFFFFF;
+  color:#333333;
+  width: 300px;
+  border-radius: 8px;
+  text-align: start;
+  padding: 20px 17px;
+  font-size: 16px;
+  line-height: 24px;
 }
 </style>
