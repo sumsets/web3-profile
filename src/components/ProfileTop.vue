@@ -17,7 +17,7 @@
 
       <div id="back-more-bar">
         <img src="@/assets/Frame.svg" alt="back" />
-        <img src="@/assets/Group 65.svg" alt="more" />
+        <img src="@/assets/chain.svg" alt="more" />
       </div>
 
       <div id="wallet-token-bar">
@@ -46,8 +46,10 @@
           <img class="badge" src="@/assets/badge-student.svg" alt="more" />
           <img class="badge" src="@/assets/badge-ranking-1.svg" alt="more" />
         </div>
-        <p id="person">{{personnel}}</p>
       </div>
+    </div>
+    <div id="person-block">
+      <p id="person">{{personnel}}</p>
     </div>
   </div>
 </template>
@@ -64,11 +66,7 @@ export default {
       wifiLevel: 3,
       code: 'Ox134...5bed',
       token: '420',
-      pp: './assets/unsplash_6anudmplLw4.svg',
       user: 'Leroy Watson',
-      badge1: './assets/Ranking 1.svg',
-      badge2: './assets/Fast Graduate.svg',
-      badge3: './assets/Top Student.svg',
       personnel: 'I am an experienced content writer and digital marketing expert, with a proven track record of writing engaging...',
       // eslint-disable-next-line
       imageUrl: require('@/assets/top-background.svg'),
@@ -82,12 +80,12 @@ export default {
 <style scoped lang="scss">
 #head {
   background-color: #F7F7FA;
-  height: 405px;
 }
 #upper-head {
-  height: 154px;
   position: relative;
   z-index: 1;
+  padding-bottom: 5px;
+  //object-fit: cover;
 }
 #status-bar {
   color: white;
@@ -141,16 +139,10 @@ export default {
   font-size: 20px;
 }
 #lower-head {
-  height: 278px; //278 olmalı, geçici olarak
-  align-items: center;
   margin-top: -90px;
-  /*
-  position: relative;
-  top: -20px;
-  */
+  padding-bottom: 72px;
 }
 #profile-section{
-  height: 158px;
   justify-content: space-between;
   margin-top: -55px;
   display: flex;
@@ -179,5 +171,10 @@ export default {
   padding: 20px 17px;
   font-size: 16px;
   line-height: 24px;
+  margin-top: -60px;
+}
+#person-block {
+  display: flex;
+  justify-content: center;
 }
 </style>
