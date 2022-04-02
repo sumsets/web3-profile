@@ -1,12 +1,12 @@
 <template>
-  <div id="head">
-    <div id="upper-head" :style="{ backgroundImage: 'url(' + imageUrl + ')' }">
-      <div id="status-bar">
-        <span id="status-bar-left">
+  <div class="head">
+    <div class="upper-head" :style="{ backgroundImage: 'url(' + imageUrl + ')' }">
+      <div class="status-bar">
+        <span class="status-bar-left">
           09:41
         </span>
 
-        <div id="status-bar-right">
+        <div class="status-bar-right">
           <img class="right-bar-icons" src="@/assets/MobileSignal.svg" alt="sinyal" />
 
           <profile-top-wifi class="right-bar-icons" :degree="wifiLevel"></profile-top-wifi>
@@ -15,33 +15,33 @@
         </div>
       </div>
 
-      <div id="back-more-bar">
+      <div class="back-more-bar">
         <img src="@/assets/Frame.svg" alt="back" />
         <img src="@/assets/chain.svg" alt="more" />
       </div>
 
-      <div id="wallet-token-bar">
-        <div id="wallet">
-          <img  id="wallet-icon" src="@/assets/wallet-icon.svg" alt="wallet-icon">
-          <span id="director">{{code}}</span>
+      <div class="wallet-token-bar">
+        <div class="wallet">
+          <img  class="wallet-icon" src="@/assets/wallet-icon.svg" alt="wallet-icon">
+          <span class="director">{{code}}</span>
         </div>
 
-        <div id="token">
-          <img id="token-icon" src="@/assets/tokens.svg" alt="tokens" />
-          <span id="token-total">{{token}}</span>
+        <div class="token">
+          <img class="token-icon" src="@/assets/tokens.svg" alt="tokens" />
+          <span class="token-total">{{token}}</span>
         </div>
       </div>
     </div>
 
-    <div id="lower-head" :style="{ backgroundImage: 'url(' + imageUrl2 + ')' }">
-      <div id="profile-section">
-        <img id="pp" src="@/assets/pp.svg" alt="avatar" />
+    <div class="lower-head" :style="{ backgroundImage: 'url(' + imageUrl2 + ')' }">
+      <div class="profile-section">
+        <img class="pp" src="@/assets/pp.svg" alt="avatar" />
 
-        <span id="user-name">
+        <span class="user-name">
           {{user}}
         </span>
 
-        <div id="badges">
+        <div class="badges">
           <img class="badge" src="@/assets/badge-fast.svg" alt="more" />
           <img class="badge" src="@/assets/badge-student.svg" alt="more" />
           <img class="badge" src="@/assets/badge-ranking-1.svg" alt="more" />
@@ -49,8 +49,8 @@
       </div>
     </div>
 
-    <div id="description-block">
-      <p id="description-text">
+    <div class="description-block">
+      <p class="description-text">
         {{description}}
       </p>
     </div>
@@ -81,21 +81,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#head {
+.head {
   background-color: #F7F7FA;
 }
-#upper-head {
+.upper-head {
   position: relative;
   z-index: 1;
   padding-bottom: 5px;
 }
-#status-bar {
+.status-bar {
   color: white;
   display: flex;
   justify-content: space-between;
   padding: 13px 24px;
 }
-#status-bar-right{
+.status-bar-right {
   display: flex;
   flex-wrap: wrap;
 }
@@ -103,12 +103,12 @@ export default {
   padding-left:5px;
 }
 
-#back-more-bar{
+.back-more-bar {
   display: flex;
   justify-content: space-between;
   padding: 10px 24px;
 }
-#wallet-token-bar{
+.wallet-token-bar {
   display: flex;
   justify-content: space-between;
   padding: 8px 3px;
@@ -116,7 +116,7 @@ export default {
   margin-top: 20px;
 
 }
-#wallet{
+.wallet {
   display: flex;
   border: 1px solid #BBD5DE;
   border-radius: 8px;
@@ -125,36 +125,36 @@ export default {
   margin-left: 15px;
   align-items: center;
 }
-#wallet-icon{
+.wallet-icon{
   padding-right: 5px;
 }
-#director {
+.director {
   text-decoration: underline;
   font-size: 12px;
 }
-#token{
+.token{
   display: flex;
   margin-right: 15px;
   align-items: center;
 }
-#token-total{
+.token-total{
   font-size: 20px;
 }
-#lower-head {
+.lower-head {
   margin-top: -55px;
   padding-bottom: 72px;
 }
-#profile-section{
+.profile-section{
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#pp {
+.pp {
   z-index: 1;
 
 }
-#user-name {
+.user-name {
   color:#333333;
   font-size: 22px;
   padding: 10px;
@@ -162,12 +162,12 @@ export default {
 .badge {
   margin: 0px 4px;
 }
-#description-block {
+.description-block {
   display: flex;
   justify-content: center;
   margin-top: -60px;
 }
-#description-text {
+.description-text {
   color:#333333;
   font-size: 16px;
   line-height: 24px;
