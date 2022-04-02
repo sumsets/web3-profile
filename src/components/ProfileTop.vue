@@ -139,19 +139,17 @@ export default {
   font-size: 20px;
 }
 #lower-head {
-  margin-top: -90px;
+  margin-top: -55px;
   padding-bottom: 72px;
 }
 #profile-section{
   justify-content: space-between;
-  margin-top: -55px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #pp {
   z-index: 1;
-  margin-top: 35px;
 
 }
 #user-name {
