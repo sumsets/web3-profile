@@ -48,8 +48,11 @@
         </div>
       </div>
     </div>
-    <div id="person-block">
-      <p id="person">{{personnel}}</p>
+
+    <div id="description-block">
+      <p id="description-text">
+        {{description}}
+      </p>
     </div>
   </div>
 </template>
@@ -67,7 +70,7 @@ export default {
       code: 'Ox134...5bed',
       token: '420',
       user: 'Leroy Watson',
-      personnel: 'I am an experienced content writer and digital marketing expert, with a proven track record of writing engaging...',
+      description: 'I am an experienced content writer and digital marketing expert, with a proven track record of writing engaging...',
       // eslint-disable-next-line
       imageUrl: require('@/assets/top-background.svg'),
       // eslint-disable-next-line
@@ -85,7 +88,6 @@ export default {
   position: relative;
   z-index: 1;
   padding-bottom: 5px;
-  //object-fit: cover;
 }
 #status-bar {
   color: white;
@@ -160,19 +162,19 @@ export default {
 .badge {
   margin: 0px 4px;
 }
-#person {
-  background-color: #FFFFFF;
-  color:#333333;
-  width: 300px;
-  border-radius: 8px;
-  text-align: start;
-  padding: 20px 17px;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: -60px;
-}
-#person-block {
+#description-block {
   display: flex;
   justify-content: center;
+  margin-top: -60px;
+}
+#description-text {
+  color:#333333;
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  border-radius: 8px;
+  padding: 20px 17px;
+  background-color: #FFFFFF;
+  margin: 0;
 }
 </style>
