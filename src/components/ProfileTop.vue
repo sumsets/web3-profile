@@ -1,6 +1,6 @@
 <template>
   <div class="head">
-    <div class="upper-head" :style="{ backgroundImage: 'url(' + imageUrl + ')' }">
+    <div class="upper-head" :style="upperHeadStyle">
       <div class="status-bar">
         <span class="status-bar-left">
           09:41
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="lower-head" :style="{ backgroundImage: 'url(' + imageUrl2 + ')' }">
+    <div class="lower-head" :style="lowerHeadStyle">
       <div class="profile-section">
         <img class="pp" src="@/assets/pp.svg" alt="avatar" />
 
@@ -71,10 +71,18 @@ export default {
       token: '420',
       user: 'Leroy Watson',
       description: 'I am an experienced content writer and digital marketing expert, with a proven track record of writing engaging...',
-      // eslint-disable-next-line
-      imageUrl: require('@/assets/top-background.svg'),
-      // eslint-disable-next-line
-      imageUrl2: require('@/assets/top2-background.svg'),
+      upperHeadStyle: {
+        // eslint-disable-next-line
+        backgroundImage: 'url(' + require('@/assets/top-background.svg') + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      },
+      lowerHeadStyle: {
+        // eslint-disable-next-line
+        backgroundImage: 'url(' + require('@/assets/top2-background.svg') + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      },
     };
   },
 };
@@ -176,5 +184,6 @@ export default {
   padding: 20px 17px;
   background-color: #FFFFFF;
   margin: 0;
+  text-align: left;
 }
 </style>
