@@ -44,7 +44,7 @@
         <div class="badges">
           <img class="badge1" src="@/assets/badge-fast.svg" alt="bagde" />
           <img class="badge1" src="@/assets/badge-student.svg" alt="badge" />
-          <img class="badge1" src="@/assets/badge-ranking-1.svg" alt="more" />
+          <img class="badge1" src="@/assets/badge-ranking-1.svg" alt="badge" />
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@ export default {
   text-decoration: underline;
   font-size: 12px;
   line-height: 16.37px;
-  font-family: 'nunito-sans-regular-400 - latin';
+  font-weight: 400;
 }
 .token{
   display: flex;
@@ -148,7 +148,7 @@ export default {
 .token-total{
   font-size: 20px;
   line-height: 27px;
-  font-family: 'nunito-sans-700 - latin';
+  font-weight: 700;
 }
 .lower-head {
   margin-top: -55px;
@@ -165,9 +165,10 @@ export default {
 }
 .user-name {
   color:#333333;
-  font-size: 22px;
   padding: 10px;
-  font-family: 'nunito-sans-600 - latin';
+  font-weight: 600;
+  font-size: 22px;
+
 }
 .badge1 {
   margin: 0px 4px;
@@ -190,6 +191,6 @@ export default {
   background-color: #FFFFFF;
   margin-bottom: 1px;
   text-align: left;
-  font-family: 'nunito-sans-regular-400 - latin';
+  font-weight: 400;
 }
 </style>
