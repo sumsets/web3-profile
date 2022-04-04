@@ -42,9 +42,9 @@
         </span>
 
         <div class="badges">
-          <img class="badge" src="@/assets/badge-fast.svg" alt="more" />
-          <img class="badge" src="@/assets/badge-student.svg" alt="more" />
-          <img class="badge" src="@/assets/badge-ranking-1.svg" alt="more" />
+          <img class="badge1" src="@/assets/badge-fast.svg" alt="bagde" />
+          <img class="badge1" src="@/assets/badge-student.svg" alt="badge" />
+          <img class="badge1" src="@/assets/badge-ranking-1.svg" alt="more" />
         </div>
       </div>
     </div>
@@ -110,7 +110,6 @@ export default {
 .right-bar-icons {
   padding-left:5px;
 }
-
 .back-more-bar {
   display: flex;
   justify-content: space-between;
@@ -122,14 +121,13 @@ export default {
   padding: 8px 3px;
   align-items: center;
   margin-top: 20px;
-
 }
 .wallet {
   display: flex;
   border: 1px solid #BBD5DE;
   border-radius: 8px;
   background-color: #BBD5DE;
-  padding: 4px 9px;
+  padding: 3px 11px 3px 8px;
   margin-left: 15px;
   align-items: center;
 }
@@ -139,6 +137,8 @@ export default {
 .director {
   text-decoration: underline;
   font-size: 12px;
+  line-height: 16.37px;
+  font-family: 'nunito-sans-regular-400 - latin';
 }
 .token{
   display: flex;
@@ -147,6 +147,8 @@ export default {
 }
 .token-total{
   font-size: 20px;
+  line-height: 27px;
+  font-family: 'nunito-sans-700 - latin';
 }
 .lower-head {
   margin-top: -55px;
@@ -160,15 +162,18 @@ export default {
 }
 .pp {
   z-index: 1;
-
 }
 .user-name {
   color:#333333;
   font-size: 22px;
   padding: 10px;
+  font-family: 'nunito-sans-600 - latin';
 }
-.badge {
+.badge1 {
   margin: 0px 4px;
+}
+.badges {
+  margin-bottom: 4px;
 }
 .description-block {
   display: flex;
@@ -179,11 +184,12 @@ export default {
   color:#333333;
   font-size: 16px;
   line-height: 24px;
-  width: 300px;
+  width: 335px;
   border-radius: 8px;
-  padding: 20px 17px;
+  padding: 20px 16px;
   background-color: #FFFFFF;
-  margin: 0;
+  margin-bottom: 1px;
   text-align: left;
+  font-family: 'nunito-sans-regular-400 - latin';
 }
 </style>
