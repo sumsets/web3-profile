@@ -118,7 +118,7 @@ export default {
 .wallet-token-bar {
   display: flex;
   justify-content: space-between;
-  padding: 8px 3px;
+  padding: 4px 3px;
   align-items: center;
   margin-top: 20px;
 }
@@ -151,8 +151,8 @@ export default {
   font-weight: 700;
 }
 .lower-head {
-  margin-top: -55px;
-  padding-bottom: 72px;
+  margin-top: -125px;
+  padding-bottom: 77px;
 }
 .profile-section{
   justify-content: space-between;
@@ -161,14 +161,16 @@ export default {
   align-items: center;
 }
 .pp {
+  margin-top: 65px;
   z-index: 1;
+  border: solid 6px rgb(130, 170, 65);
+  border-radius: 65px;
 }
 .user-name {
   color:#333333;
   padding: 10px;
   font-weight: 600;
   font-size: 22px;
-
 }
 .badge1 {
   margin: 0px 4px;
@@ -189,7 +191,7 @@ export default {
   border-radius: 8px;
   padding: 20px 16px;
   background-color: #FFFFFF;
-  margin-bottom: 1px;
+  margin-bottom: 15px;
   text-align: left;
   font-weight: 400;
 }
