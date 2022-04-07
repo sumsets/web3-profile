@@ -42,9 +42,9 @@
         </span>
 
         <div class="badges">
-          <img class="badge" src="@/assets/badge-fast.svg" alt="more" />
-          <img class="badge" src="@/assets/badge-student.svg" alt="more" />
-          <img class="badge" src="@/assets/badge-ranking-1.svg" alt="more" />
+          <img class="badge1" src="@/assets/badge-fast.svg" alt="bagde" />
+          <img class="badge1" src="@/assets/badge-student.svg" alt="badge" />
+          <img class="badge1" src="@/assets/badge-ranking-1.svg" alt="badge" />
         </div>
       </div>
     </div>
@@ -110,7 +110,6 @@ export default {
 .right-bar-icons {
   padding-left:5px;
 }
-
 .back-more-bar {
   display: flex;
   justify-content: space-between;
@@ -119,17 +118,16 @@ export default {
 .wallet-token-bar {
   display: flex;
   justify-content: space-between;
-  padding: 8px 3px;
+  padding: 4px 3px;
   align-items: center;
   margin-top: 20px;
-
 }
 .wallet {
   display: flex;
   border: 1px solid #BBD5DE;
   border-radius: 8px;
   background-color: #BBD5DE;
-  padding: 4px 9px;
+  padding: 3px 11px 3px 8px;
   margin-left: 15px;
   align-items: center;
 }
@@ -139,6 +137,8 @@ export default {
 .director {
   text-decoration: underline;
   font-size: 12px;
+  line-height: 16.37px;
+  font-weight: 400;
 }
 .token{
   display: flex;
@@ -147,10 +147,12 @@ export default {
 }
 .token-total{
   font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
 }
 .lower-head {
-  margin-top: -55px;
-  padding-bottom: 72px;
+  margin-top: -125px;
+  padding-bottom: 77px;
 }
 .profile-section{
   justify-content: space-between;
@@ -159,16 +161,22 @@ export default {
   align-items: center;
 }
 .pp {
+  margin-top: 65px;
   z-index: 1;
-
+  border: solid 6px rgb(130, 170, 65);
+  border-radius: 65px;
 }
 .user-name {
   color:#333333;
-  font-size: 22px;
   padding: 10px;
+  font-weight: 600;
+  font-size: 22px;
 }
-.badge {
+.badge1 {
   margin: 0px 4px;
+}
+.badges {
+  margin-bottom: 4px;
 }
 .description-block {
   display: flex;
@@ -179,11 +187,12 @@ export default {
   color:#333333;
   font-size: 16px;
   line-height: 24px;
-  width: 300px;
+  width: 335px;
   border-radius: 8px;
-  padding: 20px 17px;
+  padding: 20px 16px;
   background-color: #FFFFFF;
-  margin: 0;
+  margin-bottom: 15px;
   text-align: left;
+  font-weight: 400;
 }
 </style>
